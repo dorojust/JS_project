@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+  <title>FAILD</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon"href="favicon.ico">
+  <link rel="stylesheet" href="style.css">
+  <script src="faild.js"></script>
+</head>
+<body>
+    <div id="faild">FAILD</div>
+    <div id="score">Score:</div>
+    <script>
+      const score = localStorage.getItem('score');
+      document.getElementById('score').innerText = `Score: ${score}`;
+    </script>
+    <input class="faild" type="button" value="Retry" onClick="window.location.href = 'index.html'"></input>
+</body>
+</html>
